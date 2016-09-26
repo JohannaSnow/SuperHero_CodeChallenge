@@ -21,17 +21,4 @@ myApp.controller('addPetController', ['$scope', '$http', function($scope, $http)
       console.log('err');
     });
   };
-
-  // $http({
-  //   method: 'GET',
-  //   url: '/heroes'
-  // }).then(function successCallback(response) {
-  //   $scope.enum = response.data.map(function(type) {
-  //     return {type: type };
-  //   });
-  //   $scope.selected = $scope.enum[0];
-  //   console.log('enum =', $scope.enum);
-  // }, function errorCallback(response) {
-  //   console.log('err');
-  });
 }]);
