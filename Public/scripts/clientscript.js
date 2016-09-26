@@ -5,16 +5,16 @@ var myApp = angular.module( 'myApp', ['ngRoute'] );
 myApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.
       when("/about", {
-        // templateUrl: "/views/partials/about.html",
+        templateUrl: "/views/partials/about.html",
         controller: "aboutHeroController"
       }).
       when("/add", {
         templateUrl: "/views/partials/add.html",
-        controller: "addPetController"
+        controller: "addHeroController"
       }).
       when("/view", {
         templateUrl: "/views/partials/view.html",
-        controller: "viewPetController"
+        controller: "viewHeroController"
       }).
       otherwise({
         redirectTo: "/about"
