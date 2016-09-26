@@ -1,12 +1,13 @@
-myApp.controller('addPetController', ['$scope', '$http', function($scope, $http) {
+myApp.controller('addHeroController', ['$scope', '$http', function($scope, $http) {
   $scope.addHero = function(alias, first_name,last_name, city, power_name) {
     var dataToSend ={
-      alias: alias,
-      first_name: first_name.name,
-      last_name: last_name.name,
-      city: city,
-      power_name: power_name.name,
+      alias: $scope.alias,
+      first_name: $scope.first_name,
+      last_name: $scope.last_name,
+      city: $scope.city,
+      power_name: $scope.power_name
     };
+
 
     console.log('data to send =', dataToSend);
 
@@ -19,6 +20,6 @@ myApp.controller('addPetController', ['$scope', '$http', function($scope, $http)
       console.log('post resp =', response);
     }, function errorCallback(response) {
       console.log('err');
-    });
-  };
-}]);
+    }); //end http call
+  };//end hero function
+}]); //end controller
