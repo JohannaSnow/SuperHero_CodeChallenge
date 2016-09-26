@@ -4,7 +4,7 @@ var router = express.Router();
 var path = require('path');
 
 router.get('/', function(req, res) {
-  var indexFile = path.join(__dirname, '../public/views/index.html');
+  var indexFile = path.join(__dirname, '../public/index.html');
   res.sendFile(indexFile);
 });
 

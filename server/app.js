@@ -17,7 +17,7 @@ app.use('/', index);
 
 //require and user pets router
 var heroes = require('../routers/heroes');
-app.use('/heroes', superheroes);
+app.use('/heroes', heroes);
 
 // static files
 app.use(express.static('public'));
