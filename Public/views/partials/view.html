@@ -1,0 +1,21 @@
+<div ng-init="getHeroes()" ng-controller="viewHeroController" id="heroView">
+    <div class="heroDiv" ng-repeat="hero in heroes">
+      <div id="name">
+        Alias: {{hero.alias}}
+      </div>
+      <div id="first_name">
+        First Name: {{hero.first_name}}
+      </div>
+      <div id="last_name">
+        Last Name: {{hero.last_name}}
+      </div>
+      <div id="city">
+        City: {{hero.city}}
+      </div>
+      <div id="power_name">
+        Power Name: {{hero.power_name}}
+      </div>
+
+      <button ng-click="deleteHero(hero._id)" type="button" name="button">Delete</button>
+    </div>
+</div>
